@@ -835,15 +835,15 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
 
+  padding: 40px;
   min-width: 528px;
 
   background-color: var(--primery-bg-color);
   box-shadow: var(--modal-shadow);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
 }
 
@@ -888,8 +888,6 @@ img {
 }
 
 .form-field {
-  position: relative;
-
   display: flex;
   flex-direction: column;
 
@@ -905,6 +903,10 @@ img {
   letter-spacing: 0.01em;
 
   color: var(--title-text-color);
+}
+
+.form-field .input-icon {
+  position: relative;
 }
 
 .form-field .form-input {
@@ -925,8 +927,10 @@ img {
 
 .form-field .form-icon {
   position: absolute;
-  bottom: 14px;
+  top: 50%;
   left: 15px;
+
+  transform: translate(-50%, -50%);
 }
 
 .form-field:focus-within .form-icon {

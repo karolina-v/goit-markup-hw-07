@@ -208,6 +208,10 @@
   background-position: center;
 }
 
+.check__input:focus + .check__icon {
+  border-color: var(--accent-color);
+}
+
 .check__contract-link {
   color: var(--accent-color);
 }
